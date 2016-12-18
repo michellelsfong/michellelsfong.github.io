@@ -1,5 +1,39 @@
+# ///////////////////// Sidebar //////////////////////
+
+sideBar = new Layer
+	backgroundColor: "rgb(255,255,255)"
+
+sideBar.width = 250
+sideBar.height = 800
+
+# ////////////////////// Need ///////////////////////
+
+needTitle = new Layer
+    html: "NEED"
+    scale: 0.4
+    x: -30
+    y: -20
+    style:
+        "fontSize" : "21pt",
+        "color" : "#424242"
+        "backgroundColor" : "rgba(255,255,255,0)"
+        "fontFamily" : "GothamBook"
+        "letterSpacing" : "1px"
+
+needDropdown = new Layer
+	backgroundColor: "rgba(0,0,0,0)"
+	borderWidth: 1
+	x: 30
+	style:
+		"borderTop" : "0"
+		"borderRight" : "0"
+		"borderLeft" : "0"
+
+needDropdown.width = 190
+needDropdown.height = 100
 
 
+# ///////////////////// Slider //////////////////////
 
 # Slider =====================================================
 
@@ -9,7 +43,7 @@ slider = new SliderComponent
     value: 30
     height: 3
     x: 30
-    y: 200
+    y: 240
 
 slider.backgroundColor = "#eee"
 slider.knob.draggable.momentum = false
