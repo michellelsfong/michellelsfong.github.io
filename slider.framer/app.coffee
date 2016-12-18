@@ -8,8 +8,9 @@ slider = new SliderComponent
     max: 60
     value: 30
     height: 3
+    x: 30
+    y: 200
 
-slider.center()
 slider.backgroundColor = "#eee"
 slider.knob.draggable.momentum = false
 slider.knob.width = 32
@@ -36,7 +37,7 @@ sliderTitle = new Layer
         "fontSize" : "21pt",
         "color" : "#424242"
         "backgroundColor" : "rgba(255,255,255,0)"
-        "fontFamily" : "GothamBold"
+        "fontFamily" : "GothamBook"
         "letterSpacing" : "1px"
 
 sliderTitle.superLayer = slider
