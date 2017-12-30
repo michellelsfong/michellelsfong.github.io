@@ -1,0 +1,156 @@
+* {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	margin: 60px;
+	font-weight: 100;
+	}
+
+.container {
+	animation: fadein 1s;
+	    -moz-animation: fadein 1s; /* Firefox */
+	    -webkit-animation: fadein 1s; /* Safari and Chrome */
+	    -o-animation: fadein 1s; /* Opera */
+}
+
+.header {
+	display: block;
+	position: absolute;
+	top:50;
+	font-size: 24px;
+	color: #000;
+	font-family: "medium", serif;
+}
+
+.header #right {
+	font-size: 14px;
+	line-height: 34px;
+}
+
+
+.content {
+	color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	font-family: "adobe-caslon-pro", serif;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+#info {
+	width: 400px;
+	margin: auto;
+}
+
+.footer {
+	display: block;
+	position: fixed;
+	color: rgba(0,0,0,0.3);
+	font-size: 18px;
+	font-family: "adobe-caslon-pro", serif;
+	height: 24px;
+	bottom: 60px;
+}
+
+#left {
+	float: left;
+	font-size: inherit;
+}
+
+#right {
+	display: block;
+	font-size: inherit;
+	position: fixed;
+	right: 60;
+}
+
+@font-face {
+	font-family: "book";
+	src: url("fonts/book.otf");
+}
+
+@font-face {
+	font-family: "medium";
+	src: url("fonts/medium.otf");
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+	body {
+		margin: 40px;
+	}
+
+	#info {
+		width: 240px;
+	}
+
+	.header #right {
+		display: none;
+	}
+
+	.header #left {
+		width: 100%;
+		margin: auto;
+		position: fixed;
+		left: 0;
+		text-align: center;
+	}
+
+	.footer #left {
+		display: none;
+	}
+
+	.footer #right {
+		width: 100%;
+		right:0;
+		text-align: center;
+	}
+
+}*
