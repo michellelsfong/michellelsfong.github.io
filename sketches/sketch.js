@@ -1,7 +1,7 @@
 var song;
 
 function setup() {
-  song = loadSound('assets/key/a.mp3');
+  song = loadSound('assets/keys/a.mp3');
   createCanvas(720, 200);
   background(255,0,0);
 }
