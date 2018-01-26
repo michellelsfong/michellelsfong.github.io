@@ -21,10 +21,6 @@ function keyTyped() {
     value = 255;
     aSound.setVolume(0.1);
     aSound.play();
-  } else if (key === 'b') {
-    value = 255;
-    bSound.setVolume(0.1);
-    bSound.play();
   } else if (key === 'h') {
     value = 255;
     hSound.setVolume(0.1);
