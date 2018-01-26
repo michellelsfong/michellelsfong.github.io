@@ -1,4 +1,5 @@
 var aSound;
+var bSound;
 var value = 0;
 
 function draw() {
@@ -18,6 +19,7 @@ function keyTyped() {
 
 function setup() {
   aSound = loadSound('assets/keys/a.mp3');
+  bSound = loadSound('assets/keys/b.mp3');
   createCanvas(720, 200);
   background(255,0,0);
 }
@@ -29,5 +31,13 @@ function mousePressed() {
   } else {
     aSound.play();
     background(0,255,0);
+  }
+
+  if ( bSound.isPlaying() ) { // .isPlaying() returns a boolean
+    bSound.stop();
+    background(255,0,255);
+  } else {
+    bSound.play();
+    background(0,255,255);
   }
 }
