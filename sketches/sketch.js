@@ -42,12 +42,36 @@ function keyTyped() {
     bSound.play();
   } else if (key === 'c') {
     value = 100;
-    bSound.setVolume(vol);
-    bSound.play();
+    cSound.setVolume(vol);
+    cSound.play();
+  } else if (key === 'd') {
+    value = 100;
+    dSound.setVolume(vol);
+    dSound.play();
+  } else if (key === 'e') {
+    value = 100;
+    eSound.setVolume(vol);
+    eSound.play();
+  } else if (key === 'f') {
+    value = 100;
+    fSound.setVolume(vol);
+    fSound.play();
+  } else if (key === 'g') {
+    value = 100;
+    gSound.setVolume(vol);
+    gSound.play();
   } else if (key === 'h') {
     value = 255;
     hSound.setVolume(vol);
     hSound.play();
+  } else if (key === 'i') {
+    value = 255;
+    iSound.setVolume(vol);
+    iSound.play();
+  } else if (key === 'j') {
+    value = 255;
+    jSound.setVolume(vol);
+    jSound.play();
   }
 
   return false;
