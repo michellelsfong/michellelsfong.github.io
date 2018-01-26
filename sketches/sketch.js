@@ -14,7 +14,7 @@ function keyTyped() {
     value = 0;
   }
   // uncomment to prevent any default behavior
-  // return false;
+  return false;
 }
 
 function setup() {
