@@ -1,4 +1,4 @@
-var song;
+var aSound;
 var value = 0;
 
 function draw() {
@@ -17,17 +17,17 @@ function keyTyped() {
 }
 
 function setup() {
-  song = loadSound('assets/keys/a.mp3');
+  aSound = loadSound('assets/keys/a.mp3');
   createCanvas(720, 200);
   background(255,0,0);
 }
 
 function mousePressed() {
-  if ( song.isPlaying() ) { // .isPlaying() returns a boolean
-    song.stop();
+  if ( aSound.isPlaying() ) { // .isPlaying() returns a boolean
+    aSound.stop();
     background(255,0,0);
   } else {
-    song.play();
+    aSound.play();
     background(0,255,0);
   }
 }
