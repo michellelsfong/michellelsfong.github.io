@@ -6,20 +6,10 @@ function setup() {
   background(255,0,0);
 }
 
-function draw() {
-  fill(value);
-  rect(25, 25, 50, 50);
-}
-
 function keyPressed() {
-  if (keyCode === a) {
+  if (keyCode === LEFT_ARROW) {
     aKey.play();
   } else if (keyCode === RIGHT_ARROW) {
     value = 0;
   }
-}
-
-function keyPressed() {
-  // Do something
-  return false; // prevent any default behaviour
 }
