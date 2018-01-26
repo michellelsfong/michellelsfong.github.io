@@ -15,3 +15,20 @@ function mousePressed() {
     background(0,255,0);
   }
 }
+
+var value = 0;
+
+function draw() {
+  fill(value);
+  rect(25, 25, 50, 50);
+}
+
+function keyTyped() {
+  if (key === 'a') {
+    value = 255;
+  } else if (key === 'b') {
+    value = 0;
+  }
+  // uncomment to prevent any default behavior
+  // return false;
+}
