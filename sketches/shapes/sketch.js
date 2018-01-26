@@ -3,7 +3,7 @@ var moveY = -100
 var aSound;
 
 function setup() {
-  aSound = loadSound('assets/keys/a.mp3');
+  aSound = loadSound('a.mp3');
 }
 
 // center point
@@ -118,7 +118,7 @@ function keyTyped() {
     rect(0,0,width, height);
     drawShape();
     moveShape();
-    aSound.setVolume(vol);
+    aSound.setVolume(0.1);
     aSound.play();
   }
 
