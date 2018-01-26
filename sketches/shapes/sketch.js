@@ -114,12 +114,12 @@ function moveShape() {
 
 function keyTyped() {
   if (key === 'a') {
+    aSound.setVolume(0.1);
+    aSound.play();
     fill(0, 100);
     rect(0,0,width, height);
     drawShape();
     moveShape();
-    aSound.setVolume(0.1);
-    aSound.play();
   }
 
   return false;
