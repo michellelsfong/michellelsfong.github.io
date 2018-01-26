@@ -1,12 +1,15 @@
 function setup() {
-  createCanvas(640, 480);
+  song = loadSound('assets/keys/a.mp3');
+  createCanvas(720, 200);
+  background(255,0,0);
 }
 
-function draw() {
-  if (keyIsPressed === true) {
-    fill(0);
+function mousePressed() {
+  if ( song.isPlaying() ) { // .isPlaying() returns a boolean
+    song.stop();
+    background(255,0,0);
   } else {
-    fill(255);
+    song.play();
+    background(0,255,0);
   }
-  rect(25, 25, 50, 50);
 }
