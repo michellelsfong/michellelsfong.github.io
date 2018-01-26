@@ -1,21 +1,4 @@
 var song;
-
-function setup() {
-  song = loadSound('assets/keys/a.mp3');
-  createCanvas(720, 200);
-  background(255,0,0);
-}
-
-function mousePressed() {
-  if ( song.isPlaying() ) { // .isPlaying() returns a boolean
-    song.stop();
-    background(255,0,0);
-  } else {
-    song.play();
-    background(0,255,0);
-  }
-}
-
 var value = 0;
 
 function draw() {
@@ -31,4 +14,20 @@ function keyTyped() {
   }
   // uncomment to prevent any default behavior
   // return false;
+}
+
+function setup() {
+  song = loadSound('assets/keys/a.mp3');
+  createCanvas(720, 200);
+  background(255,0,0);
+}
+
+function mousePressed() {
+  if ( song.isPlaying() ) { // .isPlaying() returns a boolean
+    song.stop();
+    background(255,0,0);
+  } else {
+    song.play();
+    background(0,255,0);
+  }
 }
