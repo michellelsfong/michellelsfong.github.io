@@ -19,10 +19,8 @@ function keyTyped() {
     value = 255;
     aSound.setVolume(0.1);
     aSound.play();
-  } else if (key === 'b') {
-    value = 0;
   }
-  // uncomment to prevent any default behavior
+  
   return false;
 }
 
