@@ -33,15 +33,19 @@ function draw() {
 
 function keyTyped() {
   if (key === 'a') {
-    value = 1;
+    value = 50;
     aSound.setVolume(vol);
     aSound.play();
   } else if (key === 'b') {
-    value = 20;
+    value = 255;
+    bSound.setVolume(vol);
+    bSound.play();
+  } else if (key === 'c') {
+    value = 100;
     bSound.setVolume(vol);
     bSound.play();
   } else if (key === 'h') {
-    value = 30;
+    value = 255;
     hSound.setVolume(vol);
     hSound.play();
   }
