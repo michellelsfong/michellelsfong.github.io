@@ -58,10 +58,10 @@ function setup() {
   background(255,0,0);
 }
 
-function draw() {
-  fill(value);
-  rect(25, 25, 50, 50);
-}
+//function draw() {
+//  fill(value);
+//  rect(25, 25, 50, 50);
+//}
 
 function keyTyped() {
   if (key === 'a') {
