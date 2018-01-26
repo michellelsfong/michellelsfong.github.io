@@ -2,10 +2,6 @@ var moveX = 100
 var moveY = -100
 var aSound;
 
-function setup() {
-  aSound = loadSound('a.mp3');
-}
-
 // center point
 var centerX = 0.0, centerY = 0.0;
 
@@ -31,6 +27,8 @@ var organicConstant = 1.0;
 function setup() {
   createCanvas(710, 400);
 
+ aSound = loadSound('a.mp3');
+
   //center shape in window
   centerX = width/2;
   centerY = height/2;
@@ -50,15 +48,14 @@ function setup() {
   }
 
   noStroke();
-  frameRate(60);
+  frameRate(30);
 }
 
-function draw() {
-  //fade background
+function drawing() {
   fill(0, 100);
   rect(0,0,width, height);
-  // drawShape();
-  // moveShape();
+  drawShape();
+  moveShape();
 }
 
 function drawShape() {
@@ -112,15 +109,20 @@ function moveShape() {
   }
 }
 
+function draw() {
+  if (key === 'a') {
+    drawing();
+  }
+
+  return false;
+}
+
 function keyTyped() {
   if (key === 'a') {
-    fill(0, 100);
-    rect(0,0,width, height);
-    drawShape();
-    moveShape();
     aSound.setVolume(0.1);
     aSound.play();
   }
 
   return false;
+
 }
