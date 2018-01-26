@@ -1,10 +1,20 @@
 var aSound;
 var bSound;
+
+var hSound;
+var eSound;
+var lSound;
+var oSound;
+
 var value = 0;
 
 function setup() {
   aSound = loadSound('assets/keys/a.mp3');
   bSound = loadSound('assets/keys/b.mp3');
+  hSound = loadSound('assets/keys/b.mp3');
+  eSound = loadSound('assets/keys/b.mp3');
+  lSound = loadSound('assets/keys/b.mp3');
+  oSound = loadSound('assets/keys/b.mp3');
   createCanvas(720, 200);
   background(255,0,0);
 }
@@ -20,7 +30,37 @@ function keyTyped() {
     aSound.setVolume(0.1);
     aSound.play();
   }
-  
+
+  if (key === 'b') {
+    value = 255;
+    bSound.setVolume(0.1);
+    bSound.play();
+  }
+
+  if (key === 'h') {
+    value = 255;
+    hSound.setVolume(0.1);
+    hSound.play();
+  }
+
+  if (key === 'e') {
+    value = 255;
+    eSound.setVolume(0.1);
+    eSound.play();
+  }
+
+  if (key === 'l') {
+    value = 255;
+    lSound.setVolume(0.1);
+    lSound.play();
+  }
+
+  if (key === 'o') {
+    value = 255;
+    oSound.setVolume(0.1);
+    oSound.play();
+  }
+
   return false;
 }
 
