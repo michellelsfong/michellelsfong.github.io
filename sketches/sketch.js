@@ -17,6 +17,8 @@ function draw() {
 function keyTyped() {
   if (key === 'a') {
     value = 255;
+    aSound.setVolume(0.1);
+    aSound.play();
   } else if (key === 'b') {
     value = 0;
   }
