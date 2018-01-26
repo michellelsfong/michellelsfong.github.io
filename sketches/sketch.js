@@ -37,30 +37,6 @@ function keyTyped() {
     bSound.play();
   }
 
-  else if (key === 'h') {
-    value = 255;
-    hSound.setVolume(0.1);
-    hSound.play();
-  }
-
-  else if (key === 'e') {
-    value = 255;
-    eSound.setVolume(0.1);
-    eSound.play();
-  }
-
-  else if (key === 'l') {
-    value = 255;
-    lSound.setVolume(0.1);
-    lSound.play();
-  }
-
-  else if (key === 'o') {
-    value = 255;
-    oSound.setVolume(0.1);
-    oSound.play();
-  }
-
   return false;
 }
 
