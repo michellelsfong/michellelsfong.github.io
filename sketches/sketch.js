@@ -2,6 +2,13 @@ var aSound;
 var bSound;
 var value = 0;
 
+function setup() {
+  aSound = loadSound('assets/keys/a.mp3');
+  bSound = loadSound('assets/keys/b.mp3');
+  createCanvas(720, 200);
+  background(255,0,0);
+}
+
 function draw() {
   fill(value);
   rect(25, 25, 50, 50);
@@ -15,13 +22,6 @@ function keyTyped() {
   }
   // uncomment to prevent any default behavior
   return false;
-}
-
-function setup() {
-  aSound = loadSound('assets/keys/a.mp3');
-  bSound = loadSound('assets/keys/b.mp3');
-  createCanvas(720, 200);
-  background(255,0,0);
 }
 
 function mousePressed() {
