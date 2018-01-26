@@ -5,7 +5,7 @@ var aSound;
 // center point
 var centerX = 0.0, centerY = 0.0;
 
-var radius = 50, rotAngle = -90;
+var radius = 30, rotAngle = -90;
 var accelX = 0.0, accelY = 0.0;
 var deltaX = 0.0, deltaY = 0.0;
 var springing = 0.000001, damping = 0.98;
