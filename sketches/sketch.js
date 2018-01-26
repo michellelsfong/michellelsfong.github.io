@@ -31,31 +31,31 @@ function keyTyped() {
     aSound.play();
   }
 
-  else (key === 'b') {
+  else if {} (key === 'b') {
     value = 255;
     bSound.setVolume(0.1);
     bSound.play();
   }
 
-  else (key === 'h') {
+  else if (key === 'h') {
     value = 255;
     hSound.setVolume(0.1);
     hSound.play();
   }
 
-  else (key === 'e') {
+  else if (key === 'e') {
     value = 255;
     eSound.setVolume(0.1);
     eSound.play();
   }
 
-  else (key === 'l') {
+  else if (key === 'l') {
     value = 255;
     lSound.setVolume(0.1);
     lSound.play();
   }
 
-  else (key === 'o') {
+  else if (key === 'o') {
     value = 255;
     oSound.setVolume(0.1);
     oSound.play();
