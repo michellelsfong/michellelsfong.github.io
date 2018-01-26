@@ -55,7 +55,7 @@ function setup() {
   ySound = loadSound('assets/keys/y.mp3');
   zSound = loadSound('assets/keys/z.mp3');
   createCanvas(720, 200);
-  background(255,0,0);
+//  background(255,0,0);
 }
 
 //function draw() {
