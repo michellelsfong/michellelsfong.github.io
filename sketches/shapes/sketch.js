@@ -8,7 +8,7 @@ var centerX = 0.0, centerY = 0.0;
 var radius = 30, rotAngle = -90;
 var accelX = 0.0, accelY = 0.0;
 var deltaX = 0.0, deltaY = 0.0;
-var springing = 0.000001, damping = 0.98;
+var springing = 0.0005, damping = 0.98;
 
 //corner nodes
 var nodes = 3;
@@ -82,7 +82,7 @@ function drawShape() {
 function moveShape() {
   //move center point
   deltaX = random();
-  deltaY = moveY-10000;
+  deltaY = moveY-18;
 
   // create springing effect
   deltaX *= springing;
