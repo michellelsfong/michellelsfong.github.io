@@ -1,0 +1,149 @@
+* {
+	background-color: #F4EDEC;
+	color: #111;
+	font-family: Helvetica Neue;
+	letter-spacing: -0.01em;
+	font-weight: 500;
+	font-size: 22px;
+	padding: 0px;
+	margin:0px;
+
+	/* Page transition */
+	-webkit-font-smoothing: none;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
+
+	/* Media query transition */
+	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.container-header {
+	position: relative;
+	margin: 5% 5%;
+	height: 45%;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.one-column {
+	padding: 0 5%;
+	/* post mvp
+	padding-bottom: 4%;*/
+}
+
+.two-column {
+	margin: 0 5%;
+	position: relative;
+}
+
+.two-column .list {
+	min-height: 50%;
+}
+
+.column {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+}
+
+#col-1 {
+	float:left;
+}
+
+#col-2 {
+	float:right;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.list {
+	border-bottom: 1px solid #111;
+	padding: 5% 0 4% 0;
+	border-right:  0px;
+	border-left: 0px;
+	position: relative;
+}
+
+.list-first {
+	border-top: 3px solid;
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+.list-last {
+	border-bottom: 0px;
+}
+
+
+.list #right {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.list:hover #right {
+	visibility: visible;
+	opacity: 1;
+    transition: opacity .4s ease-in;
+    -moz-transition: opacity .4s ease-in;
+    -webkit-transition: opacity .4s ease-in;
+    -o-transition: opacity .4s ease-in;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+h1 {
+	font-family: Adobe Caslon Pro;
+	letter-spacing: 0em;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#left {
+	position: relative;
+	width:60%;
+	display: inline-block;
+}
+
+#right {
+	font-size: 19px;
+	right: 0;
+	direction: rtl;
+	width:40%;
+	display: inline-block;
+	position: absolute;
+}
+
+#sticky {
+	top: 10%;
+	position: sticky;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.project-image {
+	width: 50%;
+}
+
+img {
+	width: 100%;
+	padding: 5% 0;
+}
+
+.video {
+	margin: 15% 0;
+}
