@@ -58,7 +58,7 @@
 @media only screen and (max-width: 400px) {
 
 	.container-header {
-		margin: 7% 7%;
+		margin: 8% 7%;
 	}
 
 	.one-column {
@@ -78,6 +78,13 @@
 		opacity: 1 !important;
 	}
 
+	#left, #right {
+		width: 210px;
+	}
+
+	#right {
+		padding: 5px 0 0 0;
+	}
 
 	#right, #left {
 		position: relative;
