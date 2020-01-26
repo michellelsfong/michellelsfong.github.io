@@ -1,0 +1,162 @@
+* {
+	background-color: #F4EDEC;
+	color: #111;
+	font-family: primary;
+	/*letter-spacing: -0.01em;*/
+	font-weight: 400;
+	font-size: 28px;
+	padding: 0px;
+	margin:0px;
+	line-height: 1em;
+
+	/* Page transition */
+	-webkit-font-smoothing: none;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
+
+	/* Media query transition */
+	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "primary";
+	src: url("../fonts/primary.otf") format("opentype");
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+	bottom: 0;
+	display: block;
+}
+
+.container-header {
+	position: absolute;
+	margin: 100px 70px 0 70px;
+	height: 45%;
+	max-height: 30px;
+	display: block;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.container {
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+}
+
+.one-column {
+	padding: 0 70px;
+}
+
+.column {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+}
+
+#col-1 {
+	float:left;
+}
+
+#col-2 {
+	float:right;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.list {
+	border-bottom: 1px solid rgba(0,0,0,0.8);
+	padding: 70px 0 4% 0;
+	border-right:  0px;
+	border-left: 0px;
+	position: relative;
+}
+
+.list-first {
+	border-top: 2px solid rgba(0,0,0,1);
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+
+.list-last {
+	border-bottom: 0px;
+}
+
+
+.list #right {
+	/*visibility: hidden;*/
+	/*opacity: 0;*/
+}
+
+.list:hover #right {
+	visibility: visible;
+	opacity: 1;
+    transition: opacity .4s ease-in;
+    -moz-transition: opacity .4s ease-in;
+    -webkit-transition: opacity .4s ease-in;
+    -o-transition: opacity .4s ease-in;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+h1 {
+	font-size: 24px;
+	font-family: adobe-caslon-pro, serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1em;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#left {
+	position: relative;
+	width:60%;
+	display: inline-block;
+}
+
+#right {
+	font-size: 23px;
+	right: 0;
+	direction: rtl;
+	width:40%;
+	display: inline-block;
+	position: absolute;
+}
+
+#sticky {
+	top: 10%;
+	position: sticky;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.project-image {
+	width: 50%;
+}
+
+img {
+	width: 100%;
+	padding: 70px 0;
+}
+
+.video {
+	margin: 15% 0;
+}

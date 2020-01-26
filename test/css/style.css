@@ -1,0 +1,42 @@
+* {	
+	font-family: primary;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.2em;
+	color: #111111;
+	background-color: #F4EDEC;
+}
+
+.header {
+	font-family: adobe-caslon-pro, serif;
+}
+
+.page-header{
+	font-size: 26px;
+}
+
+.list-column-left {
+	font-size: 25px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+* {
+
+	-webkit-font-smoothing: none; /* Page transition */
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box; /* Media query transition */
+  	-moz-box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "primary";
+	src: url("../fonts/primary.otf") format("opentype");
+}
