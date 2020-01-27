@@ -19,12 +19,22 @@
 	font-size: 25px;
 }
 
+.arrow {
+	width: 26px;
+	padding: 6px 0 0 0;
+}
+
 a:link {
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: none;
+}
+
+a:hover .list-row {
+	transform: translate(5px,0);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 }
 
 * {
