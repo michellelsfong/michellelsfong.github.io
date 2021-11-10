@@ -63,7 +63,7 @@
 	position: absolute;
 	top: 60px;
 	right: 30px;
-	bottom: 0;
+	bottom: 30px;
 	left: 30px;
 	min-height: 0px; /* Distance from list to top */ 
 }
