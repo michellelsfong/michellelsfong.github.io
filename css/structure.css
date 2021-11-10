@@ -63,9 +63,9 @@
 	position: absolute;
 	top: 60px;
 	right: 30px;
-	bottom: 30px;
+	bottom: 0px;
 	left: 30px;
-	min-height: 0px; /* Distance from list to top */ 
+	min-height: 650px; /* Distance from list to top */ 
 }
 
 .page-header{
