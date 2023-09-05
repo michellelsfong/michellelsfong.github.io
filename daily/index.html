@@ -1,0 +1,37 @@
+<html>
+  <head><title>Daily counter</title></head>
+  <body>
+
+    <p>Morning pages</p>
+
+    <button onclick="
+      count();
+      displayCount();
+    ">Done
+    </button>
+
+    <button onclick="
+      counter = 0;
+      localStorage.removeItem('saveCount');
+      displayCount();
+    ">Clear
+    </button>
+
+    <p class="js-count-display"></p>
+
+    <script>
+
+      let counter = JSON.parse(localStorage.getItem('saveCount')) || 0;
+
+      function count() {
+        counter += 1;
+        localStorage.setItem('saveCount', counter);
+      }
+
+      function displayCount() {
+        document.querySelector('.js-count-display')
+            .innerHTML = counter;
+      }
+    </script>
+  </body>
+</html>
