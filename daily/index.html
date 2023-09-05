@@ -5,9 +5,15 @@
     <p>Counter</p>
 
     <button onclick="
-      count();
+      count(1);
       displayCount();
     ">Done
+    </button>
+
+    <button onclick="
+      count(-1);
+      displayCount();
+    ">Undo
     </button>
 
     <button onclick="
@@ -23,8 +29,8 @@
 
       let counter = JSON.parse(localStorage.getItem('saveCount')) || 0;
 
-      function count() {
-        counter += 1;
+      function count(value) {
+        counter += value;
         localStorage.setItem('saveCount', counter);
       }
 
