@@ -1,8 +1,39 @@
 <html>
-  <head><title>Daily counter</title></head>
+  <head><title>Daily counter</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+
+        body {
+          background-color: rgb(239, 238, 231);
+            font-size: 30px;
+            margin: 40px;
+        }
+
+        p {
+          margin: 0px;
+        }
+
+        button {
+          border: none;
+          background-color: white;
+          padding: 20px;
+          margin: 50px 0 0 0;
+          cursor: pointer;
+        }
+
+        button:active {
+          background-color: rgb(241, 240, 237);
+          
+        }
+
+    </style>
+  
+  </head>
   <body>
 
-    <p>Counter</p>
+    <p>Daily counter</p>
+    <p class="js-count-display"></p>
 
     <button onclick="
       count(1);
@@ -20,14 +51,14 @@
       counter = 0;
       localStorage.removeItem('saveCount');
       displayCount();
-    ">Clear
+    ">Reset
     </button>
-
-    <p class="js-count-display"></p>
 
     <script>
 
       let counter = JSON.parse(localStorage.getItem('saveCount')) || 0;
+
+      displayCount();
 
       function count(value) {
         counter += value;
@@ -38,6 +69,8 @@
         document.querySelector('.js-count-display')
             .innerHTML = counter;
       }
+
     </script>
+
   </body>
 </html>
