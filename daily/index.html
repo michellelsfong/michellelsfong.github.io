@@ -7,7 +7,7 @@
         body {
           background-color: rgb(239, 238, 231);
             font-size: 30px;
-            margin: 40px;
+            margin: 5%;
         }
 
         p {
@@ -18,8 +18,13 @@
           border: none;
           background-color: white;
           padding: 20px;
-          margin: 50px 0 0 0;
+          margin: 10px 0 0 0;
           cursor: pointer;
+          width: 100%;
+        }
+
+        button:hover {
+          color:rgb(48, 74, 44);
         }
 
         button:active {
@@ -27,32 +32,52 @@
           
         }
 
+        .info {
+
+        }
+
+        .controls {
+          bottom: 5%;
+          position: absolute;
+          width: 90%;
+        }
+
+        button.reset {
+          background-color: rgba(241, 240, 237, 0);
+        }
+
     </style>
   
   </head>
   <body>
 
-    <p>Daily counter</p>
-    <p class="js-count-display"></p>
+    <div class="info">
+      <p>Daily counter</p>
+      <p class="js-count-display"></p>
+    </div>
 
-    <button onclick="
-      count(1);
-      displayCount();
-    ">Done
-    </button>
+    <div class="controls">
+      <button onclick="
+        count(1);
+        displayCount();
+      ">Done
+      </button>
 
-    <button onclick="
-      count(-1);
-      displayCount();
-    ">Undo
-    </button>
+      <button onclick="
+        count(-1);
+        displayCount();
+      ">Undo
+      </button>
 
-    <button onclick="
-      counter = 0;
-      localStorage.removeItem('saveCount');
-      displayCount();
-    ">Reset
-    </button>
+      <p>
+        <button class="reset" onclick="
+          counter = 0;
+          localStorage.removeItem('saveCount');
+          displayCount();
+        ">Reset
+        </button>
+      </p>
+    </div>
 
     <script>
 
