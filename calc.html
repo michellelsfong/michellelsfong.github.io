@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Finance calculator</title>
+    <style type="text/css">
+
+      * {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 180%;
+      }
+
+      body {
+        margin: 100px;
+        background-color: #FFFAF9;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <p>What is your monthly take home pay?</p>
+    $<input type="text" id="incomeInput" placeholder="1000">
+    <button onclick="calculate();">Calculate</button>
+    <br>
+    <br>
+
+    <p>Your recommended budget</p>
+    <p>Needs: $<span id="needs"></span></p>
+    <p>Wants: $<span id="wants"></span></p>
+    <p>Savings: $<span id="savings"></span></p>
+    <br>
+
+    <p>Your recommended rent range</p>
+    <p>Safest: $<span id="rentSafest"></span></p>
+    <p>Safe: $<span id="rentSafe"></span></p>
+    <p>Maximum: $<span id="rentMaximum"></span></p>
+    <br>
+
+    <p>Your safety net</p>
+    <p>Emergency savings for 3 months: $<span id="emergency3"></span></p>
+    <p>Emergency savings for 6 months: $<span id="emergency6"></span></p>
+    <p>Emergency savings for 12 months: $<span id="emergency12"></span></p>
+
+    <script>
+
+      function calculate() {
+        needs.innerHTML = incomeInput.value*0.5;
+        wants.innerHTML = incomeInput.value*0.3;
+        savings.innerHTML = incomeInput.value*0.2;
+
+        rentSafest.innerHTML = incomeInput.value*0.25;
+        rentSafe.innerHTML = incomeInput.value*0.3;
+        rentMaximum.innerHTML = incomeInput.value*0.33;
+
+        emergency3.innerHTML = needs.innerHTML*3;
+        emergency6.innerHTML = needs.innerHTML*6;
+        emergency12.innerHTML = needs.innerHTML*12;
+      }
+
+    </script>
+  </body>
+</html>
