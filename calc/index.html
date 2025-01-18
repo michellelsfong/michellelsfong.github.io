@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Finance calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+
+    <div class="section">
+        <p>Your take-home pay:</p>
+        <input type="text" id="takeHomePay" value="2000">
+        <button onclick="calculate();">Calculate</button>
+    </div>
+
+    <div class="section">
+        <h3>Budget</h3>
+        <h2>Using the <a>50/30/20 rule</a>, your monthly budget comes out to:</h2>
+
+        <p id="budgetNeeds"></p>
+        <p id="budgetWants"></p>
+        <p id="budgetSavings"></p>
+    </div>
+
+    <div class="section">
+        <h3>Housing</h3>
+        <h2>Aim for your share of housing to cost <a>25% to 30%</a> of your income.</h2>
+
+        <p id="housingLow"></p>
+        <p id="housingHigh"></p>
+    </div>
+
+    <div class="section">
+        <h3>Emergency savings</h3>
+        <h2>Save <a>3 to 6 months</a> of necessary expenses for unexpected situations.</h2>
+
+        <p id="savings3"></p>
+        <p id="savings6"></p>
+        <p id="savings12"></p>
+    </div>
+
+    <div class="section">
+        <h3>Coming soon</h3>
+        <p>Saving to buy a house</p>
+        <p>Saving for retirement</p>
+        <p>Freelance rate</p>
+    </div>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
