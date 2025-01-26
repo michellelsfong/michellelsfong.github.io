@@ -25,18 +25,15 @@ h3 {
 
 a {
   border-bottom: 1px dotted black;
-  color: black;
 }
 
 a:hover, a:active {
-  color: black;
   border-bottom: 1px solid;
   background-color: #F7F7F6;
   /* background-color: #FAFFE0; */
 }
 
 .button {
-  color: black;
   font-size: 16px;
   font-weight: 400;
   padding: 10px 18px;
@@ -71,6 +68,10 @@ input {
   position: fixed;
   width: 80%;
   background-color: #F7F7F6;
+}
+
+.appleLinksBlack a {
+  color: black !important;
 }
 
 /* Accordion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
