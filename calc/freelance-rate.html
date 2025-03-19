@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Finance calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+
+    <p>What is your pre-tax salary? No commas please.</p>
+    $<input type="text" id="salaryInput" value="100000">
+
+    <p>What percentage is your gross paycheck taxed? Input percentage as decimal. <a href="https://smartasset.com/taxes/washington-paycheck-calculator" target="_blank">Use smart asset</a></p>
+    <input type="number" id="taxRateInput" value="0.2">
+
+    <p><button onclick="calculate();">Calculate</button></p>
+    <br>
+    <br>
+
+    <br>After taxes, your salary's take home pay is $<span id="salaryYearlyTakehome"></span>
+    <br>That's $<span id="salaryMonthlyTakehome"></span> a month.
+    <br>
+
+    <br>Self employment tax is 15%, so you'd only need to make $<span id="selfemYearlyProfit"></span> to match your salary.
+    <br>Not including holidays, that's $<span id="selfemMonthlyProfit"></span> a month.
+    <br>Or, $<span id="selfemWeeklyProfit"></span> a week.
+    <br>Or, $<span id="selfemDailyProfit"></span> a workday.
+    <br>
+
+    <br>Privately, your minimum hourly rate is $<span id="selfemHourlyRate"></span>. A rule of thumb is to double this amount,
+    to account for benefits like insurance, software, time between projects, etc.
+    <br>
+    <br>To work 5 days a week and make the equivalent of your salary, consider a $<span id="selfemDailyProfitDouble"></span>/hr rate.
+    <br>To work 4 days a week and make the equivalent of your salary, consider a $<span id="selfemWork4Days"></span>/hr rate.
+    <br>To work 3 days a week and make the equivalent of your salary, consider a $<span id="selfemWork3Days"></span>/hr rate.
+    <br>
+
+    <script>
+
+      function calculate() {
+        taxRate = 1-taxRateInput.value;
+        console.log(taxRate);
+        salaryYearlyTakehome.innerHTML = Math.round(salaryInput.value*taxRate);
+        salaryMonthlyTakehome.innerHTML = Math.round(salaryInput.value*taxRate/12);
+        selfemYearlyProfit.innerHTML = Math.round(salaryYearlyTakehome.innerHTML/0.85);
+        selfemMonthlyProfit.innerHTML = Math.round(selfemYearlyProfit.innerHTML/12);
+        selfemWeeklyProfit.innerHTML = Math.round(selfemYearlyProfit.innerHTML/48);
+        selfemDailyProfit.innerHTML = Math.round(selfemYearlyProfit.innerHTML/240);
+        selfemHourlyRate.innerHTML = Math.round(selfemDailyProfit.innerHTML/8);
+        selfemDailyProfitDouble.innerHTML = Math.round(selfemHourlyRate.innerHTML*2);
+        selfemWork4Days.innerHTML = Math.round(selfemWeeklyProfit.innerHTML/4/8*2);
+        selfemWork3Days.innerHTML = Math.round(selfemWeeklyProfit.innerHTML/3/8*2);
+      }
+
+    </script>
+  </body>
+</html>
