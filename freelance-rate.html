@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Freelance rate calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="freelance/style.css" type="text/css">
+  </head>
+
+  <body>
+
+    <h1>Michelle's freelance rate calculator</h1>
+
+    <br><br>
+
+    <p>What is your salary before taxes?</p>
+    $<input type="text" id="salaryInput" value="100000">
+
+    <br><br>
+
+    <p>How much is your income taxed? We like using <a href="https://www.google.com/search?q=smartasset+paycheck+calculator+for+my+state&sca_esv=2726c0b09330db3e&rlz=1C5CHFA_enUS1092US1092&ei=JkBYaLiaFaHfkPIP1M_l4Q8&ved=0ahUKEwi4xeTGyYWOAxWhL0QIHdRnOfwQ4dUDCBA&uact=5&oq=smartasset+paycheck+calculator+for+my+state&gs_lp=Egxnd3Mtd2l6LXNlcnAiK3NtYXJ0YXNzZXQgcGF5Y2hlY2sgY2FsY3VsYXRvciBmb3IgbXkgc3RhdGUyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEdIjgdQ4gNY4gNwAXgCkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAICoAINwgIKEAAYsAMY1gQYR5gDAOIDBRIBMSBAiAYBkAYIkgcBMqAHALIHALgHAMIHAzItMsgHCg&sclient=gws-wiz-serp" target="_blank">SmartAsset</a> to find out.</p>
+    <input type="number" id="taxRateInput" value="29">%
+
+    <p><button onclick="calculate();" id="calcButton">Calculate</button></p>
+
+    <p class="hint" id="confirmation">Your breakdown</p>
+
+      <div class="accordioncontainer"><button class="accordion"><div>
+        On salary, you're taking home $<span id="salaryYearlyTakehome">_</span> a year.
+          </div></button><div class="panel">
+          <p>That comes out to:
+            <ul>
+              <li>$<span id="salaryMonthlyTakehome">_</span> a month after taxes.</li>
+              <li>$<span id="salaryWeeklyTakehome">_</span> a week after taxes.</li>
+              <li>$<span id="salaryDailyTakehome">_</span> a day after taxes.</li>
+              <li>$<span id="salaryHourlyTakehome">_</span> an hour after taxes. (This is not your freelance rate)</li>
+            </ul>
+      </div></div>
+
+      <div class="accordioncontainer"><button class="accordion"><div>
+        To make the equivalent as a freelancer, you'll want to make $<span id="selfemYearlyProfit">_</span> a year
+          </div></button><div class="panel">
+            <p>Freelancers are taxed 15%. Here's the math:</p>
+            <table>
+              <tr>
+                <td class="hint">Before taxes</td>
+                <td class="hint">After taxes</td>
+              </tr>
+              <tr>
+                <td>$<span id="selfemYearlyProfitTable">_</span> a year</td>
+                <td>$<span id="selfemYearlyProfitTable15">_</span> a year</td>
+              </tr>
+              <tr>
+                <td>$<span id="selfemMonthlyProfit">_</span> a month</td>
+                <td>$<span id="selfemMonthlyProfit15">_</span> a month</td>
+              </tr>
+              <tr>
+                <td>$<span id="selfemWeeklyProfit">_</span> a week</td>
+                <td>$<span id="selfemWeeklyProfit15">_</span> a week</td>
+              </tr>
+              <tr>
+                <td>$<span id="selfemDailyProfit">_</span> a day</td>
+                <td>$<span id="selfemDailyProfit15">_</span> a day</td>
+              </tr>
+              <tr>
+                <td>$<span id="selfemHourlyRate">_</span> an hour*</td>
+                <td>$<span id="selfemHourlyRate15">_</span> an hour</td>
+              </tr>
+            </table>
+          <br>
+          <p>*We'll double this to determine your hourly rate to account for all other costs</p>
+        </div></div>
+
+      <div class="accordioncontainer"><button class="accordion"><div>
+        Your rate should be at least $<span id="selfemDailyProfitDouble">_</span>/hr
+          </div></button><div class="panel">
+          <p>The rule of thumb is to double your salary's hourly rate ($<span id="selfemHourlyRateMin"></span>)</p>
+          <p>This generously covers <a href="https://www.healthcare.gov/see-plans/#/" target="_blank">health insurance</a>, vacation days, and cost to operate your business.</p>
+          <ul>
+            <li>To work 4 days a week, bump up to $<span id="selfemWork4Days">_</span>/hr rate.</li>
+            <li>To work 3 days a week, bump up to $<span id="selfemWork3Days">_</span>/hr rate.</li>
+          </ul>
+      </div></div>
+
+      <p>This is only a starting point, balance information here with industry-specific resources. Good luck!</p>
+
+  <script src="freelance/script.js"></script>
+
+  </body>
+</html>
